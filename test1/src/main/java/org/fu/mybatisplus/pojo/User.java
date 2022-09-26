@@ -2,6 +2,7 @@ package org.fu.mybatisplus.pojo;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
+import org.fu.mybatisplus.enums.SexEnum;
 
 @Data
 //@TableName("t_user")
@@ -32,6 +33,9 @@ public class User {
      *  1：已删除
      *  删除操作也会自动改为修改操作
      */
-//    @TableLogic
-//    private String isDelete;
+    @TableLogic
+    private String isDeleted;
+
+
+    private SexEnum sex;
 }

@@ -39,7 +39,7 @@ public class TestMain {
      */
     @Test
     public void testDeleteById(){
-        int delete = userMapper.deleteById(1571394007449862145L);
+        int delete = userMapper.deleteById(13L);
         System.out.println(delete);
     }
 

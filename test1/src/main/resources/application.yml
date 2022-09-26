@@ -14,6 +14,10 @@ mybatis-plus:
     db-config:
       table-prefix: t_   #表示所有表的前缀为  t_
 #      id-type: auto
+  #配置类型别名
+  type-aliases-package: org.fu.mybatisplus.pojo
+  #扫描通用枚举的包
+  type-enums-package: org.fu.mybatisplus.enums
 
 
   # 注意：mybatis-plus默认将 id作为主键，如果主键不是id，要设置TableId注解
